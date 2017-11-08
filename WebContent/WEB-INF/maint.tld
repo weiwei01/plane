@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib version="2.1" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd">
+  <tlib-version>1.0</tlib-version>
+  <short-name>pf</short-name>
+  <uri>/WEB-INF/maint</uri>
+  
+  <tag>
+        <name>DisplayPrice</name>
+        <tagclass>booking.tags.DisplayPrice</tagclass>
+        <bodycontent>JSP</bodycontent>
+        <attribute>
+            <name>price</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+    
+  <tag>
+        <name>DisplayUpdateButton</name>
+        <tagclass>booking.tags.DisplayUpdateButton</tagclass>
+        <bodycontent>JSP</bodycontent>
+        <attribute>
+            <name>orderNumber</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+    
+   <tag>
+        <name>DisplayNewOrderButton</name>
+        <tagclass>booking.tags.DisplayNewOrderButton</tagclass>
+        <bodycontent>JSP</bodycontent>
+        <attribute>
+            <name>orderNumber</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+   
+</taglib>
